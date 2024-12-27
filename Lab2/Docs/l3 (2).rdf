@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15/"
+     xml:base="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#связывает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#связывает">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#связывает"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#вес_связи -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#вес_связи">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#вес_термина -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#вес_термина">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+        <untitled-ontology-15:вес_термина rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-15:вес_термина>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала_производства -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала_производства">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77.8</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+        <untitled-ontology-15:вес_термина rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-15:вес_термина>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31.9</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_производства -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_производства">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.9</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_развития -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_развития">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.2</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_стоимости -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_стоимости">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.4</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_только -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_только">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.2</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_экономии -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической_экономии">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Политической"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.4</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+        <untitled-ontology-15:вес_термина rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46.45</untitled-ontology-15:вес_термина>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+        <untitled-ontology-15:вес_термина rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.73</untitled-ontology-15:вес_термина>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34.5</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития_производства -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития_производства">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.1</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития_стоимости -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития_стоимости">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.8</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+        <untitled-ontology-15:вес_термина rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54.55</untitled-ontology-15:вес_термина>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.4</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости_производства -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости_производства">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.7</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+        <untitled-ontology-15:вес_термина rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.73</untitled-ontology-15:вес_термина>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.6</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_производства -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_производства">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.9</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_развития -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_развития">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.6</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_стоимости -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только_стоимости">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23.7</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Термин"/>
+        <untitled-ontology-15:вес_термина rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86.36</untitled-ontology-15:вес_термина>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_капитала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_капитала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Капитала"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_производства -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_производства">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Производства"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34.7</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_развития -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_развития">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Развития"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23.9</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_стоимости -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_стоимости">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Стоимости"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.7</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_только -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии_только">
+        <rdf:type rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Связь"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Только"/>
+        <untitled-ontology-15:связывает rdf:resource="http://www.semanticweb.org/konstantin/ontologies/2024/11/untitled-ontology-15#Экономии"/>
+        <untitled-ontology-15:вес_связи rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.3</untitled-ontology-15:вес_связи>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
