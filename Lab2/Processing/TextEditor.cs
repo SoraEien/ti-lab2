@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Lab2.Processing
 {
@@ -24,6 +25,11 @@ namespace Lab2.Processing
             try
             {
                 text = text.ToLower();
+
+                text = text.Replace("\r", " ");
+                text = text.Replace("\n", " ");
+                text = Regex.Replace(text, @"s{2,}", " ").Trim();
+
                 var result = new StringBuilder();
 
                 foreach (char ch in text)
