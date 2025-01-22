@@ -1,0 +1,50 @@
+from gensim import models, corpora
+from gensim.utils import simple_preprocess
+import pymorphy2
+import numpy as np
+
+# Лемматизация текста для русского языка
+def lemmatize_text(text):
+    morph = pymorphy2.MorphAnalyzer()
+    words = simple_preprocess(text, deacc=True)  # Предварительная токенизация
+    lemmatized_words = [morph.parse(word)[0].normal_form for word in words]
+    return lemmatized_words
+
+# Чтение текста из файла
+with open('file.txt', 'r', encoding='utf-8') as file:
+    documents = file.readlines()
+
+# Лемматизация всех документов
+lemmatized_documents = [lemmatize_text(doc) for doc in documents]
+
+# Создание словаря из лемматизированных документов
+mydict = corpora.Dictionary(lemmatized_documents)
+
+# Создание корпуса из лемматизированных документов
+corpus = [mydict.doc2bow(doc) for doc in lemmatized_documents]
+
+# Создание модели TF-IDF
+tfidf = models.TfidfModel(corpus)
+
+# Получение TF-IDF для каждого документа
+tfidf_corpus = tfidf[corpus]
+
+# Сбор всех слов и их весов в одном списке
+all_tfidf_weights = []
+for doc in tfidf_corpus:
+    all_tfidf_weights.extend([[mydict[id], freq] for id, freq in doc])
+
+# Подсчет частоты слов и их весов
+word_weights = {}
+for word, weight in all_tfidf_weights:
+    if word in word_weights:
+        word_weights[word] += weight
+    else:
+        word_weights[word] = weight
+
+# Сортировка по весу и вывод 30 самых частых слов
+sorted_word_weights = sorted(word_weights.items(), key=lambda x: x[1], reverse=True)[:30]
+
+# Вывод результатов
+for word, weight in sorted_word_weights:
+    print(f"{word}: {np.around(weight, decimals=2)}")
